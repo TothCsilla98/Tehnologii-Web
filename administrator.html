@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-widdth, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Regional Hospital</title>
+   <link rel="stylesheet" href="css/formula.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+ </head>
+
+
+
+
+<body>
+<div style="text-align:center;font-weight:bold;">Adaugare cont Medic sau cont Secretara</div>
+<!--<button id="Mybtn" class="btn btn-primary">Creare cont doctor</button>-->
+<form action="creareCont.php" method="post" >
+<table>
+   <tr> 	
+   <p>
+ 
+     <td class="input-group"> <label for="username">Nume utilizator :</label></td>
+     <td class="input-group">  <input type="text" name="username" id="username"></td>
+ </p>
+</tr>
+   
+<tr>
+
+   <p>
+     <td class="input-group"> <label for="password">Parola :</label>
+       <td class="input-group"><input type="password" name="password" id="password">
+   </p>
+</tr>
+<tr>
+
+   <p>
+     <td class="input-group"> <label for="type">Tip de utilizator<br><sub>*tip Secratara sau Medic!</sub></label>
+       <td class="input-group"><input type="text" name="type" id="type">
+   </p>
+   
+</tr> 
+<tr>
+
+   <p>
+     <td>
+     	<td>
+   </p>
+   
+</tr> 
+
+     	
+   <td><input type="submit" value="Submit Data">
+   </table>
+</form>
+
+<div class="container" style="padding-top:50px">
+<div><u>Vizualizare intervenții chirurgicale</u></div>
+<form class="form-inline" method="post" action="generate_pdf.php">
+<button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf"" aria-hidden="true"></i>
+Generate PDF</button>
+</form>
+</fieldset>
+</div>
+ 
+  <a href="https://docs.google.com/spreadsheets/d/1ILV7q_On6GUiRaXGBbiYbcSdSmfeXR9jMIKs125trME/edit?fbclid=IwAR3h5J-_HbLIroLm8gkuipVg22VmduFClkpMwbueq9rSjpYW6nnDs4DSoxU#gid=1347870844" target="_blank">Modificare intervenție chirurgicală </a>
+
+<div class="text-right">
+ <button class="btn btn-primary"> <a href="login.php" style="color:red;">Pagina de logare</a></button>
+  <button class="btn btn-primary"> <a href="home.html" style="color:red;">Pagina principală</a></button>
+</div>
+
+
+</body>	
+</html> 

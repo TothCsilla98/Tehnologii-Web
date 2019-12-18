@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-widdth, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Regional Hospital</title>
+
+ </head>
+
+
+ 
+<style>
+	body{
+		font-family:verdana;
+	}
+	.container{width:500px;margin: 0 auto;}
+	h3{line-height:20px;font-size:20px;}
+	input{display:block;width:350px;height:20px;margin:10px 0;}
+	textarea{display:block;width:350px;margin:10px 0;}
+	button{background:green; border:1px solid green;width:70px;height:30px;color:#ffffff}
+</style>
+ <body> 
+
+
+
+
+
+<div class="container">
+	<h3>Completeaza foaia de consult</h3>
+	
+	
+	<form action="pacient.php" method="post">
+		<input type="text" name="numeMedic" placeholder="Numele Medicului" required>
+		<input type="text" name="numePacient" placeholder="Numele Pacientului" required>
+		<textarea cols="40" name="concluzii" placeholder="concluzii și medicamentele prescrise" rows="8" required></textarea>
+		<input type="text" name="plata" placeholder="tarifele de la consultatie" required>
+		<button type="submit" name="submit">Submit</button>
+	</form>
+</div>	
+
+
+
+
+
+
+</body>
+</html>
